@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ("Git Checkout") {  
       steps {
-          git branch: 'main', credentials : 'git', url: 'https://github.com/Tangala123/mvn'
+           git branch: 'main', credentialsId: 'git', url: 'https://github.com/Tangala123/mvn'
       }
     }
     stage ("Maven Build") {
